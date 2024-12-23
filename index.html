@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="barre-navigation">
+        <div>
+          <p><strong>Audrey Minjoulet-Lafitte</strong></p>
+        </div>
+        <div class="liens">
+          <div class="sizelien1 bordure">
+            <a title="A Propos" href="#apropos">À Propos</a>
+          </div>
+          <div class="sizelien1 bordure">
+            <a title="Portfolio" href="#portfolio">Portfolio</a>
+          </div>
+          <div class="sizelien1 bordure1 contact-modal">
+            <label for="contactModal" title="Conatct">Contact</label>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <section id="introduction">
+          <figure>
+            <img
+              src="Images/Ml_audrey.jpg"
+              alt="Audrey Minjoulet-Lafitte"
+              id="previewImage"
+            />
+          </figure>
+          <article class="article">
+            <h2>Audrey Minjoulet-Lafitte</h2>
+            <p>
+              Après avoir complété ma formation de développeuse web avec
+              OpenClassrooms, je suis désormais en recherche active d'une
+              alternance en tant que Product Owner.
+            </p>
+            <p>
+              Mon intérêt pour la gestion de projets et la création de produits
+              m’a motivée à me tourner vers ce métier, où je souhaite allier mes
+              compétences techniques et ma capacité à travailler en équipe.
+            </p>
+            <p>
+              Avec un parcours en tant que coach sportif, j’ai développé le sens
+              de l’organisation, de l’écoute, et une forte capacité à
+              accompagner les autres, des atouts que je souhaite désormais
+              mettre à profit dans le domaine du digital. Curieuse et motivée,
+              je suis prête à apprendre et à m’impliquer dans de nouveaux
+              projets.
+            </p>
+          </article>
+        </section>
+        <section class="portfolio" id="portfolio">
+          <div class="portfolio-title">
+            <h3>Mon Portfolio</h3>
+          </div>
+          <div class="container-img">
+            <a href="#" class="card-main">
+              <img src="Images/Accueil Booki.png" alt="" />
+            </a>
+            <a href="#" class="card-main">
+              <img
+                src="Images/Accueil Sophie Bluel.png" alt="" />
+            </a>
+            <a href="#" class="card-main">
+              <img
+                src="Images/Accueil Nina Carducci.png" alt="" />
+            </a>
+            <a href="#" class="card-main">
+              <img
+                src="Images/Kasa.png" alt="" />
+              </div>
+            </a>
+            <a href="#" class="card-main">
+              <img
+                src="Images/Mon_vieux_GrimoireP6.png"
+                alt=" Image du projet Mon vieux grimoire avec la couverture de plusieurs livres mis en évidence"/>
+            </a>
+            <a href="#" class="card-main">
+              <img
+                src="Images/Qwenta.png"
+                alt=""
+              />
+              <div class="frame16">
+                <div class="card-txt">
+                  <h3 class="card-title">Qwenta</h3>
+                  <p class="card-subtitle">
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!--modalContact-->
+    <input type="checkbox" id="contactModal" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-content">
+        <h2>Contactez-moi</h2>
+        <form
+          action="mailto:votre-email@example.com?subject=Demande de contact&body=Bonjour,%0D%0AJe souhaite vous contacter concernant..."
+          method="POST"
+          enctype="text/plain"
+        >
+          <label for="name">Nom:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Votre nom"
+            required
+          /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Votre email"
+            required
+          /><br /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Votre message"
+            required
+          ></textarea
+          ><br /><br />
+
+          <input type="submit" value="Envoyer" />
+          <label for="contactModal" class="close">Fermer</label>
+        </form>
+      </div>
+    </div>
+
+    <!-- <footer>
+      <section class="footer">
+        <div class="footer-section">
+          <h3>À propos</h3>
+          <ul>
+            <li>
+              <a title="Fonctionnement du site" href="#"
+                >Fonctionnement du site</a
+              >
+            </li>
+            <li>
+              <a title="Conditions générales" href="#">Conditions générales</a>
+            </li>
+            <li>
+              <a title="Données et confidentialité" href="#"
+                >Données et confidentialité</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Nos hébergements</h3>
+          <ul>
+            <li>
+              <a title="Charte qualité" href="#">Charte qualité</a>
+            </li>
+            <li>
+              <a title="Proposer votre hôtel" href="#">Proposer votre hôtel</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Assistance</h3>
+          <ul>
+            <li>
+              <a title="Centre d'aide" href="#">Centre d'aide</a>
+            </li>
+            <li>
+              <a title="Nous contacter" href="#">Nous contacter</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer> -->
+  </body>
+</html>
