@@ -2,10 +2,11 @@
 * {
     font-family: "Raleway", sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
   }
   
   :root {
-    --main-color: #0065fc;
+    --main-color: #1D6154;
     --main-bg-color:#f2f2f2;
     --filter-bg-color: #deebff;
     --beige-color:#F8F5EE; 
@@ -18,7 +19,8 @@
   body {
     background-color: var(--beige-color);
     width: 100%;
-    margin:0px
+    margin:0px;
+    padding: 0px;
   }
   
   .section-title {
@@ -33,19 +35,39 @@
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 25px;
     border-bottom: 2px solid #333;
+    z-index: 1000;
+    background-color: #faebd7;
+  }
+
+  .mon-avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
   }
   
   .liens {
     display: flex;
     height: 79px;
+    align-items: center;
   }
   
   .sizelien1 {
     width: 113px;
     height: 35px;
+  }
+
+  .sizelien1 a {
+    font-weight: bold; 
+    font-size: 20px;
+    color: #1D6154;
   }
   
   .sizelien2 {
@@ -67,76 +89,135 @@
   }
 
   .bordure1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+    border-radius: 25px;
+    border: 2px solid #1D6154; 
   }
 
-  .contact-modal label {
-    cursor: pointer;
-    font-weight: bold;
+  .contact-modal a {
+    color: #1D6154; 
+    text-decoration: none; 
+    font-weight: bold; 
+    display: block;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 25px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
   /*body*/
   
   .main-container {
-    width: 98%;
     box-sizing: border-box;
     gap: 35px;
-    padding-left: 25px;
+    padding-top: 130px;
   }
   
-  /*headline*/
-  
-  .headline {
-    width: 100%;
-  }
-  
-  .headline h1 {
-    font-size: 22px;
-    font-weight: 700;
-    text-align: left;
-    width: 100%;
-    margin-bottom: 8px;
-  }
-  
-  .headline p {
-    font-size: 16px;
-    font-weight: 400;
-    width: 100%;
-    height: 19px;
-    margin-top: 0;
-  }
-  
-  h2 {
-    font-size: 18px;
-    font-weight: 700;
-    font-weight: bold;
-    margin: 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  /*****introduction****/
+  /****introduction****/
 
   #introduction {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+
+  .introduction {
+    background-image: url('./Images/introduction1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
     display: flex;
-    align-items: center;
-    margin: 0px 0px 0px 30px;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    color: white;
+    
   }
   
+  .introduction h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
 
-  #introduction figure {
+  .introduction h2 {
+    margin: 20px 0;
+    font-size: 2rem;
+  }
+  
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .social-link {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color:white
+  }
+
+ .social-link:hover {
+  transform: scale(1.1);
+ }
+
+ .linkedin i, .portfolio i, .github i {
+  margin-right: 10px; 
+  font-size: 1.5rem; 
+ }
+
+ .linkedin {
+  background-color: #0077b5; 
+ }
+
+ .portfolio1 {
+  background-color: #333; 
+  gap:15px;
+ }
+
+ .github {
+  background-color: #333; 
+ }
+
+  /****about****/
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 130px 0px 0px 30px;
+ }
+  
+  #about .title-about {
+    width:100%;
+    color: coral;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #about .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  #about figure {
       flex: 1
   }
 
-  #introduction img {
+  #about img {
       display: block;
       margin: auto;
       width: 40%;
   }
 
-  #introduction article {
+  #about article {
       flex: 1;
       margin-top: 50px;
   }
@@ -145,14 +226,14 @@
     margin-left: 20px;
   }
 
-  #introduction h2 {
+  #about h3 {
       font-family: 'Syne';
       font-weight: 700;
       font-size: 30px;
       color: #1D6154
   }
 
-  #introduction p {
+  #about p {
       margin-bottom: 0.7em;
       font-family: "Work Sans";
       font-style: normal;
@@ -162,45 +243,66 @@
       width: 75%;
   }
   
+  .btn-cv {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1D6154;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-cv:hover {
+    background-color: #ff7f50;
+  }
   /****** Portfolio ***********/
 
-  .portfolio-title h3 {
+  .portfolio-title {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .portfolio-title h4 {
     font-size: 30px;
     font-weight: 700;
-    padding-left: 20px;
-    margin-bottom: 35px;
+    padding-bottom: 30px;
+    padding-top:20px;
   }
   
   .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #f0f0f0;
+    background-color: #FFDDC1;
     border-radius: 15px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 80px auto 50px auto;
+    width: 90%;
   }
   
   .container-img {
     width: 100%;
     display: flex;
-    padding: 0;
-    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
   }
   
   .portfolio .card-main {
-    width: auto; 
+    flex: 1 1 calc(33.333%); 
+    max-width: calc(33.333%);
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    cursor: pointer;
   }
   
   .card-main img {
-    width: 80%; 
+    width: 90%; 
+    max-width: 300px;
+    height: 80%;
     object-fit: cover;
     border-radius: 20px;
-    display: block;
+   
   }
   
   .card-main:hover {
@@ -209,39 +311,173 @@
     transition: ease 0.4s;
   }
   
+/* modale */
+  .modal-overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .modal-content {
+    background-color: #FFDDC1;
+    padding: 30px;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow-y: auto;
+    width: 90%;
+    max-height:90%;
+    position: relative;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .button-close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  /* css pour afficher la modale lorsqu'elle est ciblée par une ancre */
+  #modal-booki:target,
+  #modal-qwenta:target,
+  #modal-kasa:target,
+  #modal-sophie-bluel:target,
+  #modal-nina-carducci:target,
+  #modal-grimoire:target  {
+    display: flex; 
+  }
+
+  .title-principal-modal {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
   
+  .box-modal {
+    align-items: center;
+    background-color: #FECDAA ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .card-modal {
+    align-items: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 100%;
+    margin: 20px;
+    padding-top: 10px;
+    text-align: center;
+    background-color:  #faebd7;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(213, 226, 255, .671);
+  }
+
+  .card-modal img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .card-modal .title-modal {
+    align-content: center;
+    color: black;
+    font-family: Poppins, sans-serif;
+    font-size: large;
+    font-style: normal;
+    font-weight: 500;
+    padding-left: 10px;
+    width:50%;
+  }
+
+  .box-modal img { 
+    width: 700px;
+    padding-bottom: 10px;
+    height: 700px;
+  }
+
+  .box-modal .card-modal .text-modal {
+    align-content: center;    
+    color: black;
+    font-family: Lato, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 1em 0;
+    text-align: center;
+  }
+
+  .box-modal .card-modal .logos {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .box-modal .card-modal .logos img {
+    width: 90px;
+    height: auto;
+    margin: 0 10px;
+  }
+
+  .box-modal .projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   /*footer*/
   
   .footer {
-    width: 96.5%;
-    list-style: none;
-    font-size: 16px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #f2f2f2;
-    margin-top: 50px;
-    margin-left: 25px;
+    background-color: #faebd7;
+    text-align: center;
   }
   
-  .footer-section {
-    width: 100%;
-  }
-  
-  .footer-section ul {
-    width: 50%;
+  .footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    row-gap: 15px;
-    list-style-type: none;
   }
   
-  .footer h3 {
-    font-weight: bold;
+  .text-footer {
     font-size: 18px;
-    padding-left: 40px;
-    width: 50%;
+    color: #333;
   }
+  
+  .contact {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .contact a {
+    color: #1D6154;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    color: #ff7f50;
+  }
+  
   
   /* Le code ci-dessous correspond à la version responsive uniquement */
   
@@ -262,15 +498,8 @@
       box-sizing: border-box;
       flex-direction: column;
     }
-  
-    /*info_group*/
-  
-  
-    /*headline*/
-  
-  
-    
-    /****** Hebergements And Populaires ***********/
+   
+    /****** Portfolio ***********/
     .portfolio {
   
       flex-direction: column;
@@ -298,8 +527,6 @@
       margin: 0px 0px 20px 0px;
     }
   
-  
-  
     /*footer*/
   
     .footer {
@@ -318,11 +545,6 @@
       margin: 0;
     }
   
-    .footer-section h3 {
-      font-weight: bold;
-      font-size: 18px;
-      width: 70%;
-    }
   }
   
   /* Small devices (phones, less than 768px) */
@@ -394,7 +616,6 @@
       margin: 0;
     }
 
-    /*hebergements*/
     .portfolio {
       width: 100%;
       order: 2;
@@ -457,30 +678,26 @@
   
   /*Large devices (Desktop, more than 1440px)*/
   @media screen and (min-width: 1440px) {
-    .body {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+   
+    .mon-avatar{
+      width: 80px;
+      height: 80px;
+    }
+
+    #about .content {
+      margin: 50px;
+    }
+
+    .container-img {
+      flex-wrap: nowrap;
+      justify-content: space-between; 
     }
   
-    .barre-navigation {
-      max-width: 1440px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-  
-    .main-container {
-      max-width: 1440px;
-      margin: 0 auto;
-      padding: 0 15px;
-  
-    }
-  
-    .footer {
-      max-width: 95%;
-      padding: 0 auto;
-      margin: 50px 20px 0px 35px;
+    .portfolio .card-main {
+      flex: 1 1 auto;
+      max-width: none; 
+      margin-bottom: 0;
     }
   }
-  
+    
   

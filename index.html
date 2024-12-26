@@ -6,10 +6,7 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -19,18 +16,25 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
+  
   <body>
     <header>
       <nav class="barre-navigation">
         <div>
-          <p><strong>Audrey Minjoulet-Lafitte</strong></p>
+          <img src="Images/Ml_audrey.jpg" class="mon-avatar"  alt="Audrey Minjoulet-Lafitte" />
         </div>
         <div class="liens">
+          <div class="sizelien1 bordure">
+            <a title="Introduction" href="#introduction">Accueil</a>
+          </div>
+          <div class="sizelien1 bordure">
+            <a title="About" href="#about">À propos</a>
+          </div>
           <div class="sizelien1 bordure">
             <a title="Portfolio" href="#portfolio">Portfolio</a>
           </div>
           <div class="sizelien1 bordure1 contact-modal">
-            <label for="contactModal" title="Conatct">Contact</label>
+            <a href="mailto:ml.audrey.pro@gmail.com" title="Contact">Contact</a>
           </div>
         </div>
       </nav>
@@ -39,113 +43,269 @@
     <main>
       <div class="main-container">
         <section id="introduction">
-          <figure>
-            <img
-              src="Images/Ml_audrey.jpg"
-              alt="Audrey Minjoulet-Lafitte"
-              id="previewImage"
-            />
-          </figure>
-          <article class="article">
-            <h2>Audrey Minjoulet-Lafitte</h2>
-            <p>
-              Après avoir complété ma formation de développeuse web avec
-              OpenClassrooms, je suis désormais en recherche active d'une
-              alternance en tant que Product Owner.
-            </p>
-            <p>
-              Mon intérêt pour la gestion de projets et la création de produits
-              m’a motivée à me tourner vers ce métier, où je souhaite allier mes
-              compétences techniques et ma capacité à travailler en équipe.
-            </p>
-            <p>
-              Avec un parcours en tant que coach sportif, j’ai développé le sens
-              de l’organisation, de l’écoute, et une forte capacité à
-              accompagner les autres, des atouts que je souhaite désormais
-              mettre à profit dans le domaine du digital. Curieuse et motivée,
-              je suis prête à apprendre et à m’impliquer dans de nouveaux
-              projets.
-            </p>
-          </article>
+          <div class="introduction" style="background-image: url(./Images/introduction.png);">            
+            <h1 class="name">Audrey Minjoulet-Lafitte</h1>
+            <h2>Developpeur Web</h2> 
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/mlaudrey033/" target="_blank" class="social-link linkedin">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://github.com/Mlaudrey" target="_blank" class="social-link github">
+                <i class="fab fa-github"></i> Github
+              </a>
+              <a href="#portfolio" class="social-link portfolio1">
+                <i class="fab fa-briefcase"></i> Portfolio
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id="about">
+          <h2 class="title-about">À propos de moi</h2>
+          <div class="content">
+            <figure>
+              <img
+                src="Images/Ml_audrey.jpg"
+                alt="Audrey Minjoulet-Lafitte"
+                id="previewImage"
+              />
+            </figure>
+            <article class="article">
+              <h3>Audrey Minjoulet-Lafitte</h3>
+              <p>
+                Après avoir complété ma formation de développeuse web avec
+                OpenClassrooms, je suis désormais en recherche active d'une
+                alternance en tant que Product Owner.
+              </p>
+              <p>
+                Mon intérêt pour la gestion de projets et la création de produits
+                m’a motivée à me tourner vers ce métier, où je souhaite allier mes
+                compétences techniques et ma capacité à travailler en équipe.
+              </p>
+              <p>
+                Avec un parcours en tant que coach sportif, j’ai développé le sens
+                de l’organisation, de l’écoute, et une forte capacité à
+                accompagner les autres, des atouts que je souhaite désormais
+                mettre à profit dans le domaine du digital. Curieuse et motivée,
+                je suis prête à apprendre et à m’impliquer dans de nouveaux
+                projets.
+              </p>
+              <a href="https://drive.google.com/file/d/1BhXife9A4S09Zi-IAdwA3jeAgN6HelU3/view?usp=drive_link" class="btn-cv" target="_blank">Mon CV</a>
+            </article>
+          </div>
         </section>
         <section class="portfolio" id="portfolio">
           <div class="portfolio-title">
-            <h3>Mon Portfolio</h3>
+            <h4>Mon Portfolio</h4>
           </div>
           <div class="container-img">
-            <a href="#" class="card-main">
-              <img src="Images/Accueil Booki.png" alt="" />
-            </a>
-            <a href="#" class="card-main">
-              <img
-                src="Images/Accueil Sophie Bluel.png" alt="" />
-            </a>
-            <a href="#" class="card-main">
-              <img
-                src="Images/Accueil Nina Carducci.png" alt="" />
-            </a>
-            <a href="#" class="card-main">
-              <img
-                src="Images/Accueil Kasa.png" alt="" />
-            </a>
-            <a href="#" class="card-main">
-              <img
-                src="Images/Accueil Mon-vieux-grimoire.png"
-                alt=" Image du projet Mon vieux grimoire avec la couverture de plusieurs livres mis en évidence"/>
-            </a>
-            <a href="#" class="card-main">
-              <img
-                src="Images/Accueil Qwenta.png" alt="" />
-            </a>
+
+            <!-- Projet 1: Booki -->
+            <div class="card-main">
+                <a href="#modal-booki" class="buton-projet-portfolio" style="cursor: pointer;">
+                  <img alt="Projet Booki" src="Images/Accueil Booki.png" />
+                </a>
+            </div>
+              <!-- Modale Projet 1 -->
+            <div class="modal-overlay" id="modal-booki">
+              <div class="modal-content">
+                <a href="#portfolio" class="button-close-modal">X</a>
+                <div class="box-modal">
+                  <h2 class="title-principal-modal">Booki</h2>
+                  <img src="Images/Booki-1.jpg" alt="Aperçu Notre Dame de la Garde à Marseille" />
+                  <div class="card-modal">
+                    <h3 class="title-modal">Description du projet :</h3>
+                    <p class="text-modal">Booki est une application de gestion de réservation pour les hôtels.Le projet consiste à créer la page d'accueil d'une agence de voyage en HTML et CSS, en intégrant une interface responsive à partir des maquettes Figma pour mobile, tablette et desktop.</p>
+                    <h3 class="title-modal">Compétences acquises :</h3> 
+                      <div class="logos">
+                        <img src="./Images/logo html.png" alt="logo de html" />
+                        <img src="./Images/logo css.png" alt="logo de css" />
+                        <img src="./Images/logo github.png" alt="logo de github" />
+                      </div>
+                  </div>
+                  <div>
+                    <img src="Images/Booki-2.png" alt="Aperçu Booki 2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Projet 2: Sophie Bluel -->
+            <div class="card-main">
+                <a href="#modal-sophie-bluel" class="buton-projet-portfolio" style="cursor: pointer;">
+                  <img src="Images/Accueil Sophie Bluel.png" alt="Projet Sophie Bluel"  />
+                </a>
+            </div>
+              <!-- Modale Projet 2 -->
+            <div class="modal-overlay" id="modal-sophie-bluel">
+              <div class="modal-content">
+                <a href="#portfolio" class="button-close-modal">X</a>
+                <div class="box-modal">
+                  <h2 class="title-principal-modal">Sophie Bluel</h2>
+                  <img src="Images/sophie-bluel.png" alt="Portrait de Sophie Bluel" />
+                  <div class="card-modal">
+                    <h3 class="title-modal">Description du projet :</h3>
+                    <p class="text-modal"> Ce projet consiste à créer une page web dynamique pour une architecte d'intérieur en utilisant JavaScript et une API. Développerer la partie Front-End à partir du HTML fourni, en gérant les interactions utilisateurs et manipulant le DOM.
+
+                    Créer une page de connexion pour l'administrateur et une modale pour uploader des médias. Communiquer avec une API pour tester les fonctionnalités et mettre en pratique vos compétences en JavaScript.
+                      
+                      Les outils utilisés incluent Figma pour les maquettes, Visual Studio Code pour le développement, et GitHub pour la gestion de version.</p>
+                    <h3 class="title-modal">Compétences acquises :</h3> 
+                      <div class="logos">
+                        <img src="./Images/logo javascript.png" alt="logo de javascript" />
+                      </div>
+                  </div>
+                  <div>
+                    <img src="Images/Sophie Bluel.png" alt="Aperçu Booki 2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Projet 3: Nina Carducci -->
+            <div class="card-main">
+                <a href="#modal-nina-carducci" class="buton-projet-portfolio" style="cursor: pointer;">
+                  <img src="Images/Accueil Nina Carducci.png"  alt="Projet Nina Carducci" />
+                </a>
+            </div>
+              <!-- Modale Projet 3 -->
+            <div class="modal-overlay" id="modal-nina-carducci">
+              <div class="modal-content">
+                <a href="#portfolio" class="button-close-modal">X</a>
+                <div class="box-modal">
+                  <h2 class="title-principal-modal">Nina Carducci</h2>
+                  <img src="Images/Nina Carducci portrait.png" alt="Portrait de Nina Carducci" />
+                  <div class="card-modal">
+                    <h3 class="title-modal">Description du projet :</h3>
+                    <p class="text-modal">Dans ce projet, je devez améliorerer la performance, l'accessibilité et le référencement d'un site web. Identifierer les problèmes à l'aide d'outils comme Lighthouse et Wave, proposerez des optimisations, puis modifierez le code pour améliorer la vitesse de chargement et le SEO. Enfin, vous rédigerez un rapport avec les résultats avant/après, incluant des captures d'écran et l'impact des améliorations.</p>
+                    <h3 class="title-modal">Compétences acquises :</h3> 
+                      <div class="logos">
+                        <img src="./Images/wave logo.png" alt="logo de wave" />
+                        <img src="./Images/lighthouse google.png" alt="logo de lightouse en forme de phare" />
+                      </div>
+                  </div>
+                  <div>
+                    <img src="Images/Nina Carducci.png" alt="Aperçu du projet nina carducci" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projet 4: Kasa -->
+            <div class="card-main">
+                <a href="#modal-kasa" class="buton-projet-portfolio" style="cursor: pointer;">
+                  <img src="Images/Accueil Kasa.png" alt="Projet Kasa"  />
+                </a>
+            </div>
+              <!-- Modale Projet 4 -->
+            <div class="modal-overlay" id="modal-kasa">
+              <div class="modal-content">
+                <a href="#portfolio" class="button-close-modal">X</a>
+                <div class="box-modal">
+                  <h2 class="title-principal-modal">Kasa</h2>
+                  <img src="Images/Accueil Kasa.png" alt="Image du projet kasa" />
+                  <div class="card-modal">
+                    <h3 class="title-modal">Description du projet :</h3>
+                    <p class="text-modal">Dans ce projet, je devez développer le front-end d'une application avec React et React Router. Créer des composants interactifs et gérerer la navigation entre les pages à l'aide de React Router. Le projet se concentre uniquement sur le front-end, basé sur des maquettes et des données simulées depuis un fichier JSON. J'ai commenceré avec Vite pour configurer rapidement l'application et utiliseré Node.js pour exécuter du code JavaScript en dehors du navigateur.</p>
+                    <h3 class="title-modal">Compétences acquises :</h3> 
+                      <div class="logos">
+                        <img src="./Images/logo react.png" alt="logo de react" />
+                        <img src="./Images/logo node js.png" alt="logo de node js" />
+                        <img src="./Images/vite.js.png" alt="logo de vite en forme d'éclair" />
+                        <img src="./Images/logo Sass.png" alt="logo de sass" />
+                      </div>
+                  </div>
+                  <div class="projet">
+                    <img src="Images/kasa accueil.png" alt="Aperçu de la page d'accueil du projet kasa qui contient plusieurs photos de logements " />
+                    <img src="Images/kasa lgt.png" alt="photo d'un logement avec les descriptions de celui-ci " />
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Projet 5: Mon vieux grimoire -->
+            <div class="card-main">
+                <a href="#modal-grimoire" class="buton-projet-portfolio" style="cursor: pointer;">
+                  <img src="Images/Accueil Mon-vieux-grimoire.png" alt="Projet Mon vieux grimoire"  />
+                </a>
+            </div>
+              <!-- Modale Projet 5 -->
+            <div class="modal-overlay" id="modal-grimoire">
+              <div class="modal-content">
+                <a href="#portfolio" class="button-close-modal">X</a>
+                <div class="box-modal">
+                  <h2 class="title-principal-modal">Mon vieux grimoire</h2>
+                  <img src="Images/Accueil Mon-vieux-grimoire.png" alt="image du projet mon vieux grimoire avec beaucoup de photos de couvertures de livres" />
+                  <div class="card-modal">
+                    <h3 class="title-modal">Description du projet :</h3>
+                    <p class="text-modal">Ce projet consiste à développer le back-end d'un site de notation de livres avec Express et MongoDB. Implémenter des opérations CRUD, un système d'authentification sécurisé, et gérer le téléchargement et l'optimisation des images. Utiliser Mongoose pour modéliser les données et suivre une architecture MVC, tout en adoptant des pratiques Green Code pour réduire l'empreinte écologique.</p>
+                    <h3 class="title-modal">Compétences acquises :</h3> 
+                      <div class="logos">
+                        <img src="./Images/mongoDB.png" alt="logo de mongoDB" />
+                        <img src="./Images/express js.png" alt="logo de express js" />
+                      </div>
+                  </div>
+                  <div>
+                    <img src="Images/mon vieux grimoire site.png" alt="Aperçu du projet mon vieux grimoire" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Projet 6: Qwenta -->
+            <div class="card-main">
+                <a href="#modal-qwenta" class="buton-projet-portfolio" style="cursor: pointer;">
+                  <img src="Images/Accueil Qwenta.png" alt="Projet Qwenta"  />
+                </a>
+            </div>
+              <!-- Modale Projet 6 -->
+              <div class="modal-overlay" id="modal-qwenta">
+                <div class="modal-content">
+                  <a href="#portfolio" class="button-close-modal">X</a>
+                  <div class="box-modal">
+                    <h2 class="title-principal-modal">Menu Maker by Qwenta</h2>
+                    <img src="Images/Qwenta site.png" alt="Image du projet Qwenta" />
+                    <div class="card-modal">
+                      <h3 class="title-modal">Description du projet :</h3>
+                      <p class="text-modal">Dans ce projet, j'étais responsable de la planification du développement d’un site web. J'ai utilisé des outils comme Notion pour gérer le projet et organiser les tâches via un tableau Kanban. J'ai rédigeré les spécifications techniques, effectué une veille technologique, et présenté la solution technique en me basant sur les maquettes, les spécifications fonctionnelles et les User Stories.</p>
+                      <h3 class="title-modal">Compétences acquises :</h3> 
+                        <div class="logos">
+                          <img src="./Images/logo feedly.png" alt="logo feedly" />
+                          <img src="./Images/logo notion.png" alt="logo notion" />
+                        </div>
+                    </div>
+                    <div class="projet">
+                      <img src="./Images/Qwenta.png" alt="image de ma présentation qwenta" />
+                      <img src="./Images/qwenta feedly.png" alt="image de ma veille avec feedly pour qwenta" />
+                      <img src="./Images/qwenta notion.png" alt="image de mon kanban avec l'outil notion" />
+                      <img src="./Images/qwenta spécification technique.png" alt="image des spécifications techniques pour qwenta" />
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
+
         </section>
       </div>
     </main>
 
 
-    <!-- <footer>
+    <footer>
       <section class="footer">
         <div class="footer-section">
-          <h3>À propos</h3>
-          <ul>
-            <li>
-              <a title="Fonctionnement du site" href="#"
-                >Fonctionnement du site</a
-              >
-            </li>
-            <li>
-              <a title="Conditions générales" href="#">Conditions générales</a>
-            </li>
-            <li>
-              <a title="Données et confidentialité" href="#"
-                >Données et confidentialité</a
-              >
-            </li>
-          </ul>
+          <p class="text-footer">© 2024 Minjoulet-Lafitte Audrey. Tous droits réservés.</p>
         </div>
-        <div class="footer-section">
-          <h3>Nos hébergements</h3>
-          <ul>
-            <li>
-              <a title="Charte qualité" href="#">Charte qualité</a>
-            </li>
-            <li>
-              <a title="Proposer votre hôtel" href="#">Proposer votre hôtel</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Assistance</h3>
-          <ul>
-            <li>
-              <a title="Centre d'aide" href="#">Centre d'aide</a>
-            </li>
-            <li>
-              <a title="Nous contacter" href="#">Nous contacter</a>
-            </li>
-          </ul>
+        <div class="footer-contact">
+          <p class="contact">
+            📧 Email: 
+            <a href="mailto:ml.audrey.pro@gmail.com">Me contacter</a>
+          </p>
+          <p class="contact">
+            📞 Téléphone:  
+            <a href="tel:+33761099765">07 61 09 97 65</a>
+          </p>
         </div>
       </section>
-    </footer> -->
+    </footer>
+    
   </body>
 </html>
