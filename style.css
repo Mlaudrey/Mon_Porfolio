@@ -17,7 +17,7 @@
   }
   
   body {
-    background-color: var(--beige-color);
+    background-color: white;
     width: 100%;
     margin:0px;
     padding: 0px;
@@ -42,7 +42,7 @@
     padding: 25px;
     border-bottom: 2px solid #333;
     z-index: 1000;
-    background-color: #faebd7;
+    background-color: #595775;
   }
 
   .mon-avatar {
@@ -52,22 +52,27 @@
     object-fit: cover;
     margin-left: 20px;
   }
+
+  .burger-icon {
+    display:none;
+  }
   
   .liens {
     display: flex;
     height: 79px;
+    justify-content: space-around;
     align-items: center;
   }
   
   .sizelien1 {
-    width: 113px;
+    width: 130px;
     height: 35px;
   }
 
   .sizelien1 a {
     font-weight: bold; 
     font-size: 20px;
-    color: #1D6154;
+    color: #ABA6BF;
   }
   
   .sizelien2 {
@@ -85,16 +90,16 @@
   }
   
   .bordure:hover {
-    border-top-color: black;
+    border-top-color: white;
   }
 
   .bordure1 {
     border-radius: 25px;
-    border: 2px solid #1D6154; 
+    border: 2px solid #f2f2f2; 
   }
 
   .contact-modal a {
-    color: #1D6154; 
+    color: #ABA6BF; 
     text-decoration: none; 
     font-weight: bold; 
     display: block;
@@ -116,7 +121,7 @@
   #introduction {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 800px;
   }
 
   .introduction {
@@ -130,7 +135,6 @@
     align-items: center; 
     text-align: center; 
     color: white;
-    
   }
   
   .introduction h1 {
@@ -141,6 +145,7 @@
   .introduction h2 {
     margin: 20px 0;
     font-size: 2rem;
+    color:white;
   }
   
   .social-links {
@@ -188,23 +193,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 130px 0px 0px 30px;
+    margin-top: 130px;
  }
   
-  #about .title-about {
+  h2 {
     width:100%;
-    color: coral;
+    color: #595775;
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
     text-align: center;
+    margin-top: 150px;
   }
 
   #about .content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    margin-top: 40px;
+    border-radius: 15px;
+    background-color: #595775;
   }
 
   #about figure {
@@ -214,23 +223,19 @@
   #about img {
       display: block;
       margin: auto;
-      width: 40%;
+      width: 60%;
   }
 
   #about article {
       flex: 1;
-      margin-top: 50px;
   }
 
-  article {
-    margin-left: 20px;
-  }
 
   #about h3 {
       font-family: 'Syne';
       font-weight: 700;
       font-size: 30px;
-      color: #1D6154
+      color: #ABA6BF;
   }
 
   #about p {
@@ -238,16 +243,17 @@
       font-family: "Work Sans";
       font-style: normal;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 18px;
       line-height: 18px;
-      width: 75%;
+      width: 90%;
+      color: white;
   }
   
   .btn-cv {
     display: inline-block;
-    margin-top: 20px;
+    margin: 20px 0;
     padding: 10px 20px;
-    background-color: #1D6154;
+    background-color: #ABA6BF;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -256,9 +262,25 @@
     transition: background-color 0.3s ease;
   }
   
-  .btn-cv:hover {
-    background-color: #ff7f50;
+
+  .competences {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 150px;
   }
+
+  .competence h2{
+    margin-top: 50px;
+  }
+
+  .competences img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+
   /****** Portfolio ***********/
 
   .portfolio-title {
@@ -485,11 +507,6 @@
   /* Medium devices (tablets, less/equal than 1024px) */
   @media screen and (max-width: 1024px) and (min-width: 768px) {
    
-    /*header*/
-    .barre-navigation {
-      width: 95%;
-    }
-  
   
     /*body*/
   
@@ -499,6 +516,14 @@
       flex-direction: column;
     }
    
+    .competences {
+      margin-top: 0;
+    }
+    
+    #about .content {
+      padding-bottom: 50px;
+      
+    }
     /****** Portfolio ***********/
     .portfolio {
   
@@ -550,10 +575,81 @@
   /* Small devices (phones, less than 768px) */
   @media (max-width: 767.98px) {
     /****** General ***********/
+   
     .body {
       width: 90%;
     }
+
+    /*header*/
   
+    .burger-icon {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .burger-icon svg {
+      fill: #333;
+      width: 50px;
+      height: 40px;
+    }
+    
+    .liens {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 15px;
+      background-color: #F1E0D6;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .burger-toggle {
+      display: none;
+    }
+
+    .burger-toggle:checked ~ .liens {
+      display: flex;
+    }
+
+    .liens {
+      height: auto;
+      margin-top: 80px;
+      margin-right:40px
+    }
+
+    .liens a {
+      color: black;
+      text-decoration: none;
+      padding: 10px 0;
+      display: block;
+    }
+
+    .sizelien1 a {
+      font-weight:200;
+      font-size:medium;
+    }
+
+    .bordure1 {
+      border: none;
+    }
+
+    /*introduction*/
+
+    .introduction {
+      height:80%;
+    }
+
+    .introduction h1 {
+      font-size: 2rem;
+    }
+
+    .introduction h2 {
+      font-size: 1.5rem;
+    }
+
     .card {
       background-color: white;
       border-radius: 20px;
@@ -573,12 +669,6 @@
       justify-content: center;
     }
   
-    /*header*/
-  
-    .barre-navigation {
-      flex-direction: column;
-      padding-left: 4%;
-    }
   
     .logo {
       display: flex;
@@ -586,28 +676,11 @@
       align-items: center;
       margin-top: 20px;
     }
+
   
-    .liens {
-      width: 95%;
-      height: 60px;
-    }
   
-    .barre-navigation .bordure {
-      width: 100%;
-      border: 2px solid transparent;
-      transition: border-color 0.3s;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-sizing: border-box;
-    }
   
-    .bordure:hover {
-      border-bottom-color: #0065fc;
-      color: #0065fc;
-    }
-  
-    /*herbergements and populaires*/
+    /*portfolio*/
   
     .portfolio {
       display: flex;
@@ -678,15 +751,23 @@
   
   /*Large devices (Desktop, more than 1440px)*/
   @media screen and (min-width: 1440px) {
+
    
     .mon-avatar{
       width: 80px;
       height: 80px;
     }
 
-    #about .content {
-      margin: 50px;
+  /*about*/
+
+    #about img {
+      width: 40%;
     }
+
+    .btn-cv {
+      margin-bottom: 20px;
+    }
+
 
     .container-img {
       flex-wrap: nowrap;
