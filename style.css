@@ -685,6 +685,10 @@
       justify-content: center;
     }
 
+    #about h3 {
+      padding: 0 10px;
+    }
+
     /*about*/
 
     #about {
@@ -718,11 +722,12 @@
     .skills {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 80px;
+      margin-bottom: 50px;
+      padding: 0 10px;
     }
 
     .skills-title h2 {
-      margin: 100px 0;
+      margin: 50px 0;
     }
 
     .skills img {
