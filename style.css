@@ -386,7 +386,7 @@
   }
 
   h2.title-principal-modal  {
-    font-size: 4rem; 
+    font-size: 3rem; 
     font-weight: bold;
     color: #BF988F; 
     text-align: center; 
@@ -462,6 +462,7 @@
     height: 60px;
     margin: 0 10px;
     border-radius: 0;
+    width: 100%;
   }
 
   .box-modal .project {
@@ -526,8 +527,12 @@
   margin: 0;
 }
 
+#top {
+  scroll-margin-top: 20px;
+}
+
   /*footer*/
-  
+  ou
   .footer {
     background-color: #faebd7;
     text-align: center;
@@ -777,6 +782,33 @@
     .container-img {
       padding: 0;
     }
+
+    h2.title-principal-modal {
+      font-size: 2rem;
+    }
+
+    .box-modal img {
+      width: 60%;
+    }
+
+    .card-modal .title-modal {
+      font-size: 1.1rem;
+    }
+
+    .card-modal {
+      width: 60%;
+    }
+
+    .box-modal .card-modal .text-modal {
+      font-size: 14px;
+    }
+
+    .box-modal .card-modal .to-top {
+      right: 110px;
+      width: 40px;
+      height: 40px;
+    }
+
    */
     /*footer*/
   
@@ -829,7 +861,8 @@
       flex-wrap: nowrap;
       justify-content: space-between; 
     }
-  
+  /*portfolio*/
+
     .portfolio .card-main {
       flex: 1 1 auto;
       max-width: none; 
@@ -838,6 +871,14 @@
 
     .modal-content {
       width: 80%;
+    }
+
+    h2 .title-principal-modal {
+      font-size : 4rem;
+    }
+
+    .box-modal img {
+      width: 40%;
     }
   }
     
