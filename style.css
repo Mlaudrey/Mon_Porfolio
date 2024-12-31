@@ -498,65 +498,30 @@
     transition: background-color 0.3s ease;
   }
 
-/* la flèche */
-.to-top {
-  position: fixed;
-  bottom: 80px;
-  right: 210px;
-  width: 50px; 
-  height: 50px;
-  border-radius: 50%; 
-  border: 1px solid #666666;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 1000;
-  transition: background-color 0.3s ease; 
-}
-
-.to-top button {
-  font-size: 20px; 
-  margin: 0;
-  border: none;
-  background: transparent;
-}
-
-.box-modal .fa-solid {
-  color: #BF988F;
-  margin: 0;
-}
-
-#top {
-  scroll-margin-top: 20px;
-}
 
   /*footer*/
-  ou
-  .footer {
-    background-color: #faebd7;
-    text-align: center;
-  }
   
   .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #595775;
   }
   
   .text-footer {
     font-size: 18px;
-    color: #333;
+    color: #ABA6BF;
   }
   
   .contact {
     font-size: 16px;
     color: #333;
+    font-weight: 700;
   }
   
   .contact a {
-    color: #1D6154;
+    color: #333;
     text-decoration: none;
   }
   
@@ -714,6 +679,9 @@
       font-size: 1.5rem;
     }
 
+    .social-links {
+      justify-content: center;
+    }
 
     /*about*/
 
@@ -835,6 +803,9 @@
       width: 90%;
     }
   
+    .text-footer{
+      text-align: center;
+    }
   }
   
   /*Large devices (Desktop, more than 1440px)*/
