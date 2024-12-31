@@ -667,12 +667,14 @@
 
     /*introduction*/
 
-    .introduction {
-      height:80%;
+    #introduction {
+      height: 500px;
+      margin-bottom: 50px;
     }
 
     .introduction h1 {
       font-size: 2rem;
+      margin-top: 80px;
     }
 
     .introduction h2 {
