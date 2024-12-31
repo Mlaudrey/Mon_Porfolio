@@ -751,12 +751,16 @@
       padding: 0;
     }
 
+    .modal content {
+      width: 90%;
+    }
+
     h2.title-principal-modal {
       font-size: 2rem;
     }
 
     .box-modal img {
-      width: 60%;
+      width: 90%;
     }
 
     .card-modal .title-modal {
@@ -764,7 +768,7 @@
     }
 
     .card-modal {
-      width: 60%;
+      width: 90%;
     }
 
     .box-modal .card-modal .text-modal {
