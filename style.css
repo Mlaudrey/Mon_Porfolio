@@ -75,7 +75,7 @@
 
   .sizelien1 a {
     font-weight: bold; 
-    font-size: 20px;
+    font-size: 22px;
     color: #ABA6BF;
   }
   
@@ -507,6 +507,7 @@
     align-items: center;
     justify-content: center;
     background-color: #595775;
+    padding: 20px 0;
   }
   
   .text-footer {
@@ -515,19 +516,16 @@
   }
   
   .contact {
-    font-size: 16px;
-    color: #333;
-    font-weight: 700;
+    font-size: 20px;
+    color: white;
   }
   
   .contact a {
-    color: #333;
+    color: #ABA6BF;
     text-decoration: none;
+    font-weight: bold;
   }
   
-  .contact a:hover {
-    color: #ff7f50;
-  }
   
   
   /* Le code ci-dessous correspond à la version responsive uniquement */
