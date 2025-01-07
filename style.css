@@ -285,6 +285,12 @@
     object-fit: contain;
   }
 
+  .skill {
+    text-align: center;
+    margin: 10px;
+    font-weight: 700;
+  }
+
   /****** Portfolio ***********/
 
   .portfolio-title {
@@ -455,14 +461,24 @@
   .box-modal .card-modal .logos {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 10px;
+    flex-wrap: wrap;
+  }
+
+  .box-modal .card-modal .logos .skill {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
+    margin: 0 10px;
   }
 
   .box-modal .card-modal .logos img {
-    height: 60px;
     margin: 0 10px;
     border-radius: 0;
-    width: 100%;
+    width: auto;
+    height: 60px;
+    padding:0;
   }
 
   .box-modal .project {
@@ -475,6 +491,7 @@
     max-height: 400px; 
     overflow-y: auto;  
     border: 1px solid #F1E0D6; 
+    margin: 10px 0;
   }
   
   .picture-modal {
@@ -485,6 +502,8 @@
   .github-link {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    gap: 15px;
   }
   
   .button-github {
@@ -614,6 +633,7 @@
       background: none;
       border: none;
       cursor: pointer;
+      color:white;
     }
 
     .burger-icon svg {
@@ -769,7 +789,7 @@
     }
 
     .card-modal .title-modal {
-      font-size: 1.1rem;
+      font-size: 1.5rem;
     }
 
     .card-modal {
@@ -777,13 +797,17 @@
     }
 
     .box-modal .card-modal .text-modal {
-      font-size: 14px;
+      font-size: 18px;
     }
 
     .box-modal .card-modal .to-top {
       right: 110px;
       width: 40px;
       height: 40px;
+    }
+
+    .github-link {
+      flex-direction: column;
     }
 
    */
